@@ -338,11 +338,11 @@
             "vertices": [
               {
                 "x": 290,
-                "y": 290
+                "y": 310
               },
               {
-                "x": 380,
-                "y": 230
+                "x": 440,
+                "y": 240
               }
             ],
             "labels": [
@@ -369,7 +369,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Put message",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -380,17 +380,68 @@
               "protocol": "",
               "threats": []
             },
-            "id": "0f9f2385-f831-44f9-ab68-84e1b31192c5",
+            "id": "6d8a6d78-cc37-4bfe-9319-036a5828a18f",
+            "source": {
+              "cell": "9a81c29c-c4b5-405e-8bee-a87ea35c6d5f"
+            },
+            "target": {
+              "cell": "601bdeaf-31f3-41d4-8993-13879ea081b4"
+            },
+            "vertices": [
+              {
+                "x": 350,
+                "y": 100
+              }
+            ],
+            "labels": [
+              "Put message"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Queries",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "6eb197b2-aafa-4495-aba2-690c97936b37",
             "source": {
               "cell": "d94e1a34-c210-49b7-adc3-07823de78bc8"
             },
             "target": {
               "cell": "a8d1489e-0ed6-4e9c-8367-5b7f432a2296"
             },
+            "labels": [
+              "Queries"
+            ],
             "vertices": [
               {
                 "x": 470,
-                "y": 290
+                "y": 320
               }
             ]
           },
@@ -414,7 +465,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "App Query Results",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -425,7 +476,7 @@
               "protocol": "",
               "threats": []
             },
-            "id": "124e8bc5-b64e-4715-9963-2103f79561a8",
+            "id": "86a05b5d-8fd6-4490-b564-f3c16bfdd7ff",
             "source": {
               "cell": "a8d1489e-0ed6-4e9c-8367-5b7f432a2296"
             },
@@ -434,9 +485,12 @@
             },
             "vertices": [
               {
-                "x": 560,
+                "x": 550,
                 "y": 390
               }
+            ],
+            "labels": [
+              "App Query Results"
             ]
           },
           {
@@ -479,7 +533,7 @@
           {
             "position": {
               "x": 330,
-              "y": 400
+              "y": 420
             },
             "size": {
               "width": 110,
@@ -487,7 +541,7 @@
             },
             "attrs": {
               "text": {
-                "text": "sqliteConnectionManageer.java"
+                "text": "sqliteConnectionManager.java"
               },
               "body": {
                 "stroke": "#333333",
@@ -501,7 +555,7 @@
             "zIndex": 15,
             "data": {
               "type": "tm.Process",
-              "name": "sqliteConnectionManageer.java",
+              "name": "sqliteConnectionManager.java",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
